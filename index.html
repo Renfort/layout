@@ -6,26 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The Great Mountains ski resort</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="img/logo.png" alt="logo with mountains on it">
-            <p>Ski resort</p>
-        </div>
         <nav>
-            <ul>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="logo with mountains on it">
+                </a>
+            </div>
+            <ul class="top-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section class="landing">
-        <h1>The Great Mountains</h1>
-        <p>Ski resort of your dreams</p>
-    </section>
-    <div class="main">
+        <section class="landing">
+            <h1>The Great Mountains</h1>
+            <p>Ski resort of your dreams</p>
+        </section>
+        
+    <main>
         <section id="about">
             <h2>About Us</h2>
             <p>Ski resort The Great Mountains is located in Southern Ukraine. For skiing and snowboarding, there are 68 km of slopes available. 16 lifts transport the guests. The winter sports area is situated between the elevations of 859 and 1,372 m. <a href="#">Click here to read more about The Great Mountains</a></p>
@@ -41,44 +44,62 @@
                     <img src="img/view4.jpg" alt="photo of a person standing at the edge of the mountain">
                 </div>
             </div>
-        </section>
-        <section class="skiing-and-snowboarding">
-            <h3>Skiing & Snowboarding</h3>
-            <div class="skiing-and-snowboarding-photos">
-                <img src="img/skiing.jpg" alt="person skiing down the mountain">
-                <img src="img/snowboarding.jpg" alt="photo of a person jumpion off of a ramp on a snowboard">
+            <div class="skiing-and-snowboarding">
+                <h3>Skiing & Snowboarding</h3>
+                <div class="skiing-and-snowboarding-photos">
+                    <img src="img/skiing.jpg" alt="person skiing down the mountain">
+                    <img src="img/snowboarding.jpg" alt="photo of a person jumpion off of a ramp on a snowboard">
+                </div>
             </div>
         </section>
         <section id="contact">
             <h2>Contact Us</h2>
-            <form action="#">
-                <div class="contact-instagram">
-                    <img src="img/instagram-logo.webp" alt="instagram logo">
-                    <a href="#">instagram.com/TGM</a>
-                </div>
-                <div class="contact-facebook">
-                    <img src="img/facebook-logo.png" alt="instagram logo">
-                    <a href="#">facebook.com/TGM</a>
-                </div>
-                <br>
-                <label for="name">Name:
-                    <input type="text" name="name" id="name" required>
-                </label>
-                <br>
-                <label for="email">Email:
-                    <input type="email" name="email" id="email" required>
-                </label>
-                <br>
-                <label for="message">Message:
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                </label>
-                <br>
-                <button type="submit">Submit</button>
-            </form>
+            <div class="contact-container">
+                <form action="#">
+                    <label for="name">Name:
+                        <input type="text" name="name" id="name" required>
+                    </label>
+                    <br>
+                    <label for="email">Email:
+                        <input type="email" name="email" id="email" required>
+                    </label>
+                    <br>
+                    <label for="message">Message:
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </label>
+                    <br>
+                    <button type="submit">Submit</button>
+                </form>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d85232.75547377588!2d24.410074284132765!3d48.119424922212644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4736fdbf10be6023%3A0xcd5db85c6d9bfe8!2z0KDQsNGF0L7QstGB0LrQuNC5INGA0LDQudC-0L0sINCX0LDQutCw0YDQv9Cw0YLRgdC60LDRjyDQvtCx0LvQsNGB0YLRjA!5e0!3m2!1sru!2sua!4v1585656332230!5m2!1sru!2sua" width="100" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+            </iframe> -->
+            </div>
         </section>
-    </div>
+    </main>
     <footer>
-        <p>TGM 2020</p>
+        <p>
+            <b>TGM &copy;</b>
+            <br>
+            Copyright 2020
+            <br>
+            All rights reserved
+        </p>
+        <ul class="footer-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">More</a></li>
+        </ul>
+        <p>
+            Also contact us at:
+            <br>
+            +389 832 092 124
+            <br>
+            TGM@tgmail.com
+            <br>
+            <img src="img/instagram-logo.webp" alt="instagram logo">
+            instagram.com/TGM
+            <br>
+            <img src="img/facebook-logo.png" alt="facebook logo">
+            facebook.com/TGM
+        </p>
     </footer>
 </body>
 </html>
