@@ -3,3 +3,19 @@
   grid-template: 1fr 1fr/1fr 1fr;
   grid-gap: 1rem;
 }
+
+.product-container {
+  width: 100%;
+  text-align: center;
+  font-size: 1.4rem;
+}
+
+.product-container button {
+  width: 20%;
+  height: 2rem;
+  font-size: 1.4rem;
+}
+
+.product-container img {
+  width: 100%;
+}
