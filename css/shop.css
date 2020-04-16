@@ -41,6 +41,7 @@
   body {
     overflow-x: hidden;
   }
+
   .products {
     grid-template-columns: 1fr;
   }
