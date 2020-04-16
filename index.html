@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>The Great Mountains ski resort</title>
     <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css" />
     <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
@@ -23,13 +25,17 @@
           <li><a href="shop.html">Shop</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="burger">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
       </nav>
     </header>
     <section class="landing">
       <h1>The Great Mountains</h1>
       <p>Ski resort of your dreams</p>
     </section>
-
     <main>
       <section id="about">
         <h2>About Us</h2>
@@ -45,27 +51,40 @@
         <h2>What we offer:</h2>
         <div class="view">
           <h3>Amazing view</h3>
-          <div class="view-photos">
-            <img
-              src="img/view1.jpg"
-              alt="photo of two people walking up the mountain"
-            />
-            <img src="img/view2.jpg" alt="photo of skiing tracks" />
-            <img src="img/view3.jpg" alt="photo of beautiful snowy mountains" />
-            <img
-              src="img/view4.jpg"
-              alt="photo of a person standing at the edge of the mountain"
-            />
+          <div class="view-photos photos-grid carousel">
+            <div>
+              <img
+                src="img/view1.jpg"
+                alt="photo of two people walking up the mountain"
+              />
+            </div>
+            <div><img src="img/view2.jpg" alt="photo of skiing tracks" /></div>
+            <div>
+              <img
+                src="img/view31.jpg"
+                alt="photo of beautiful snowy mountains"
+              />
+            </div>
+            <div>
+              <img
+                src="img/view41.jpg"
+                alt="photo of a person standing at the edge of the mountain"
+              />
+            </div>
           </div>
         </div>
         <div class="skiing-and-snowboarding">
           <h3>Skiing & Snowboarding</h3>
-          <div class="skiing-and-snowboarding-photos">
-            <img src="img/skiing.jpg" alt="person skiing down the mountain" />
-            <img
-              src="img/snowboarding.jpg"
-              alt="photo of a person jumpion off of a ramp on a snowboard"
-            />
+          <div class="view-photos photos-grid carousel">
+            <div>
+              <img src="img/skiing.jpg" alt="person skiing down the mountain" />
+            </div>
+            <div>
+              <img
+                src="img/snowboarding.jpg"
+                alt="photo of a person jumpion off of a ramp on a snowboard"
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -126,7 +145,14 @@
         facebook.com/TGM
       </p>
     </footer>
-
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/burger-menu.js"></script>
+    <script src="js/clock.js"></script>
   </body>
 </html>

@@ -67,8 +67,7 @@ body {
   color: white;
 }
 
-main .offers .view .view-photos img,
-main .offers .skiing-and-snowboarding .skiing-and-snowboarding-photos img {
+.view-photos img {
   width: 100%;
 }
 
@@ -103,13 +102,7 @@ footer img {
   width: 30px;
 }
 
-.view-photos {
-  display: grid;
-  grid-template: 1fr/1fr 1fr;
-  grid-gap: 5px;
-}
-
-.skiing-and-snowboarding-photos {
+.photos-grid {
   display: grid;
   grid-template: 1fr/1fr 1fr;
   grid-gap: 5px;
@@ -183,13 +176,6 @@ footer ul {
     margin: auto;
   }
 
-  header nav {
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 5px;
-  }
-
   .landing > * {
     position: relative;
     font-weight: 600;
@@ -200,20 +186,86 @@ footer ul {
     margin: 0;
   }
 
-  .view-photos {
-    grid-template: 1fr/1fr;
-    overflow: scroll;
-  }
-
-  .skiing-and-snowboarding-photos {
-    grid-template: 1fr/1fr;
-  }
-
   form {
     width: 100%;
   }
 }
 
+@media (max-width: 768px) {
+  .view-photos {
+    display: block;
+  }
+}
+
 .clock {
   text-align: center;
+}
+
+.carousel {
+  width: 100%;
+  /* margin: auto; */
+}
+
+.slick-dots {
+  background-color: white;
+}
+
+footer a {
+  color: black;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 5px;
+}
+
+footer a:hover {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.burger div {
+  background-color: white;
+  width: 35px;
+  height: 3px;
+  margin: 5px;
+}
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  header nav .top-menu {
+    width: 30%;
+  }
+
+  .top-menu {
+    position: absolute;
+    top: 8%;
+    right: 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 60vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(100%);
+    transition: transform 0.5s ease;
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  .burger {
+    display: block;
+    cursor: pointer;
+    align-self: center;
+    z-index: 50;
+  }
+}
+
+.toggled {
+  transform: translateX(0%);
+}
+
+header nav .top-menu li a {
+  width: 30%;
+  z-index: 49;
 }
