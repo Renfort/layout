@@ -235,6 +235,10 @@ footer a:hover {
 }
 
 @media (max-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header nav .top-menu {
     width: 30%;
   }
