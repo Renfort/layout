@@ -1,29 +1,5 @@
-.products {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1rem;
-}
-
-@media (max-width: 1000px) {
-  .products {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.product-container {
-  width: 100%;
+body {
   text-align: center;
-  font-size: 1.4rem;
-}
-
-.product-container button {
-  width: 20%;
-  height: 2rem;
-  font-size: 1.4rem;
-}
-
-.product-container img {
-  width: 100%;
 }
 
 .burger div {
@@ -40,10 +16,6 @@
 @media (max-width: 600px) {
   body {
     overflow-x: hidden;
-  }
-
-  .products {
-    grid-template-columns: 1fr;
   }
 
   header nav .top-menu {
@@ -75,4 +47,53 @@
 
 .toggled {
   transform: translateX(0%);
+}
+
+.shop-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+@media (max-width: 1000px) {
+  .shop-items {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .shop-items {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shop-item {
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: rgb(146, 146, 146) 2px 2px;
+}
+
+.shop-item-image {
+  width: 100%;
+}
+
+.alert-box {
+  position: fixed;
+  left: 50%;
+  top: 5%;
+  background-color: rgba(0, 0, 0, 0.808);
+  transform: translateX(-50%);
+  margin: 5px;
+  width: 30%;
+  font-size: 1.4rem;
+  border-radius: 20px;
+  line-height: 2rem;
+  visibility: hidden;
+  padding: 1rem;
+}
+
+.alert-pop {
+  visibility: visible;
+}
+.alert-popout {
+  visibility: hidden;
 }

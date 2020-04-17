@@ -1,7 +1,30 @@
-{
-  "image": "img/shop-ski.jpg",
-  "imageAlt": "Ski Set Photo",
-  "price": "$1999.00",
-  "header": "Best Ski Set",
-  "description": "Durable, Comfortable, Fancy"
-}
+[
+  {
+    "image": "https://picsum.photos/640/480",
+    "imageAlt": "Ski Set Photo",
+    "price": "$1999.00",
+    "header": "TGM Ski Set",
+    "description": "Durable, Comfortable, Fancy"
+  },
+  {
+    "image": "https://picsum.photos/640/480",
+    "imageAlt": "Ski Set Photo",
+    "price": "$1111.00",
+    "header": "TGM Ski Set",
+    "description": "Durable, Comfortable, Fancy"
+  },
+  {
+    "image": "https://picsum.photos/640/480",
+    "imageAlt": "Ski Set Photo",
+    "price": "$222.00",
+    "header": "TGM Ski Set",
+    "description": "Durable, Comfortable, Fancy"
+  },
+  {
+    "image": "https://picsum.photos/640/480",
+    "imageAlt": "Ski Set Photo",
+    "price": "$333.00",
+    "header": "TGM Ski Set",
+    "description": "Durable, Comfortable, Fancy"
+  }
+]
